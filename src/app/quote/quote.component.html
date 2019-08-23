@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quotes App</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
   <div class="container">
-    <app-quote-form></app-quote-form>
+    <div *ngFor='let quote of someQuotes;let j = index'>
+      <p id={{j}} appStrikethrough>{{Quote.name}}</p>
+      <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
+    </div>
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
 </body>
 </html>
