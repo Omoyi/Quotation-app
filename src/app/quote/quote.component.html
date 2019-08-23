@@ -9,11 +9,11 @@
 <body>
   <div class="container">
     <div *ngFor='let quote of someQuotes;let j = index'>
-      <p id={{j}} appStrikethrough>{{Quote.name}}</p>
+      <p id={{j}} appHighlight>{{Quote.name}}</p>
       <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
     </div>
-    <div *ngIf='goal.showDescription'>
-      <app-quote-form-detail (addQuote)="addNewQuote($event)"></app-quote-form-detail>
+    <div *ngIf='quote.showDescription'>
+      <app-quote-form-detail [quote]='quote' (isComplete) = 'deleteQuote($event,j)'></app-quote-form-detail>
     </div>
     <div>
       <app-quote-form addQuote="addNewQuote($event)"></app-quote-form>
