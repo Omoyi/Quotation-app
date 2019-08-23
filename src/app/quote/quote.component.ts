@@ -10,7 +10,7 @@ export class QuoteComponent implements OnInit {
  
 someQuotes: Quotation[] = [
   new Quotation("","","If your inside doesn't change now, your outside will not change then",new Date())
-]
+];
 
 toggleDetails(index){
   this.someQuotes[index].showDescription = !this.someQuotes[index].showDescription;
