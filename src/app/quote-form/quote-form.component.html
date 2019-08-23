@@ -1,5 +1,18 @@
 <div class="container"><br><br><br>
-  <input type="text" placeholder="your name........" id="name" [(ngModel)]="newGoal.name" name="name" #name="ngModel" required>
-  <br><br><br>
-  <textarea class="form-control" placeholder="post your quote........" id="description" rows="4" [(ngModel)]="newGoal.description" name="description" #description="ngModel" required></textarea>
+  <form (ngSubmit)=submitQuote() #goalForm='ngForm'>
+
+    <input type="text" placeholder="your name........" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger"><p>Your name is required</p></div>
+    <br><br><br><br>
+
+    <textarea class="form-control" placeholder="post your quote........" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
+    <div [hidden]="description.valid || description.pristine" class="alert alert-danger"><p>A quote is required</p></div>
+    <br><br><br>
+
+    <input type="text" placeholder="the author name........" id="author" [(ngModel)]="newQuote.name" name="authorName" #authorName="ngModel" required>
+    <br><br><br><br><br>
+
+    <button type="submit" class="btn btn-dark">Upload</button>
+
+  </form>
 </div>

@@ -8,8 +8,9 @@ input, textarea {
   border-bottom: 1px solid black;
 }
 
+
 input {
-  
+  margin-left: 30%;
 } 
 
 input:focus,
@@ -17,4 +18,15 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+button {
+  background-color: unset;
+  padding: 16px;
+  padding-right: 90px;
+  padding-left: 90px;
+  border: none;
+  color: black;
+  font-size: 19px;
+  margin-left: 35%;
 }
