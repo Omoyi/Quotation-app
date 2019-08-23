@@ -12,7 +12,10 @@
       <p id={{j}} appStrikethrough>{{Quote.name}}</p>
       <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
     </div>
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    
+    <div *ngIf='goal.showDescription'>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
   </div>
 </body>
 </html>
