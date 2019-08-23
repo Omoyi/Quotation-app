@@ -9,7 +9,7 @@ import { Quotation } from '../quotation';
 export class QuoteComponent implements OnInit {
  
 someQuotes: Quotation[] = [
-  new Quotation(1, "If your inside doesn't change now, your outside will not change then")
+  // new Quotation(1, "If your inside doesn't change now, your outside will not change then")
 ]
 
 toggleDetails(index){
