@@ -1,4 +1,12 @@
 input {
+  text-align: center;
+  padding-bottom: 7px;
+  padding-right: 30px;
+  padding-left: 30px;
   border: none;
-  border-bottom: px solod black;
+  border-bottom: 1px solid black;
+}
+
+input :focus {
+  outline: none;
 }
