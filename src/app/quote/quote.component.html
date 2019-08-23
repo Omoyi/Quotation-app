@@ -8,15 +8,15 @@
 </head>
 <body>
   <div class="container">
-    <div *ngFor='let quote of someQuotes;let j = index'>
-      <p id={{j}} appHighlight>{{Quote.name}}</p>
+     <!-- <div *ngFor='let quote of someQuotes;let j = index'> 
+      <p id={{j}} appHighlight>{{Quotation.name}}</p>
       <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
-    </div>
-    <div *ngIf='quote.showDescription'>
-      <app-quote-form-detail [quote]='quote' (isComplete) = 'deleteQuote($event,j)'></app-quote-form-detail>
+    </div> -->
+    <div>
+      <app-quote-form-detail></app-quote-form-detail>
     </div>
     <div>
-      <app-quote-form addQuote="addNewQuote($event)"></app-quote-form>
+      <app-quote-form></app-quote-form>
     </div>
   </div>
 </body>
