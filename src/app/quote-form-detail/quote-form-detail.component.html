@@ -1,6 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lexend+Giga|Ubuntu&display=swap" rel="stylesheet">
 <p>{{quote.description}}</p>
 <p>Uploaded {{quote.completeDate|dateCount}} days ago</p>
-<button (click)= 'quoteDelete(true)' style="background-image: url();">Erase</button>
-<button (click) = 'upVote()'>D{{quote.upVote}}</button>
-<button (click) = 'downVote()'>U{{quote.downVote}}</button>
+<button (click)= 'quoteDelete(true)'>Erase</button>
+<button (click) = 'upVote()' style="background-image: url(https://emojis.wiki/emoji-pics/facebook/thumbs-up-facebook.png); background-repeat: no-repeat; background-size: cover;">{{quote.upVote}}</button>
+<button (click) = 'downVote()' style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6VXyIPoXXpH5DAmyTcNREr2LHtR6yndJ5XCvofebYwUshfWzM); background-size: cover;">{{quote.downVote}}</button>
+

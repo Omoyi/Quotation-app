@@ -1,9 +1,10 @@
 button {
-  padding: 50px;
+  padding: 20px;
   margin-right: 30px;
   background-color: unset;
   border-radius: 50%;
   font-family: 'Ubuntu', sans-serif;
+  border: none;
 }
 
 input:focus,
