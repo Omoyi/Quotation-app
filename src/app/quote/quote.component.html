@@ -24,13 +24,13 @@
     <div >
       <div >
         <div *ngFor='let someQuotes of someQuotes;let j = index'> 
-          <div>
-            <h6 id={{j}} appHighlight>{{someQuotes.name}} __posted on__ {{someQuotes.completeDate|date|uppercase}}</h6>
+          <div><br><br>
+            <h6 id={{j}} appHighlight>{{someQuotes.name}} <br>{{someQuotes.description}} __posted on__ {{someQuotes.completeDate|date|uppercase}}</h6>
             <img src="https://moroccoenglish.com/me-md/2018/08/timigate-readmore.gif">
             <button (click)='toggleDetails(j)' style="background-image: url(https://moroccoenglish.com/me-md/2018/08/timigate-readmore.gif);">Click me</button>
           </div>
           <div *ngIf='someQuotes.showDescription'>
-            <app-quote-form-detail [quote]='quote' (isComplete) = 'deleteQuote($event,j)'></app-quote-form-detail>
+            <app-quote-form-detail [quote]='someQuotes' (isComplete) = 'deleteQuote($event,j)'></app-quote-form-detail>
           </div>
         </div>
       </div><br><br>
