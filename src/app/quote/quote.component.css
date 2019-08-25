@@ -62,3 +62,18 @@ nav.stroke .active ul li a:hover:after {
   width: 80%;
 }
 
+h4 {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  border-radius: 25px;
+  font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+button:focus {
+  outline: none;
+}

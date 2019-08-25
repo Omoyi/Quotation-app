@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quotes App</title>
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lexend+Giga|Shadows+Into+Light|Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body><br>
   <div class="container">
@@ -22,13 +23,14 @@
     </section>
     <div >
       <div >
-        <div *ngFor='let quote of someQuotes;let j = index'> 
+        <div *ngFor='let someQuotes of someQuotes;let j = index'> 
           <div>
-            <h4 id={{j}} appHighlight>{{quote.name}} __due on__ {{goal.completeDate|date|uppercase}}</h4>
-            <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
+            <h6 id={{j}} appHighlight>{{someQuotes.name}} __due on__ {{someQuotes.completeDate|date|uppercase}}</h6>
+            <img src="https://moroccoenglish.com/me-md/2018/08/timigate-readmore.gif">
+            <button (click)='toggleDetails(j)' style="background-image: url(https://moroccoenglish.com/me-md/2018/08/timigate-readmore.gif);">Click me</button>
           </div>
-          <div *ngIf='quote.showDescription'>
-            <app-quote-form-detail [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-form-detail>
+          <div *ngIf='someQuotes.showDescription'>
+            <app-quote-form-detail [quote]='quote' (isComplete) = 'deleteQuote($event,j)'></app-quote-form-detail>
           </div>
         </div>
       </div><br><br>
