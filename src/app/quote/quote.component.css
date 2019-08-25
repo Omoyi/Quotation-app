@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(225, 230, 245);
+}
+
 #main{
   text-align: center;
   font-weight: bolder; 
@@ -15,7 +19,7 @@ section {
 nav {
   width: 60%;
   margin: 0 auto;
-  background: #fff;
+  background: rgb(225, 230, 245);
   padding: 30px 30px;
   box-shadow: 0px 4px 0px rgb(201, 132, 111);
 }
@@ -61,3 +65,4 @@ nav.stroke ul li a:after {
 nav.stroke .active ul li a:hover:after {
   width: 80%;
 }
+

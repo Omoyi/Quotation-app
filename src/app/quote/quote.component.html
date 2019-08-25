@@ -20,15 +20,21 @@
         </ul>
       </nav>
     </section>
-    <div>
-      <div *ngFor='let quote of someQuotes;let j = index'> 
-        <p id={{j}} appHighlight>{{quote.name}}</p>
-        <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
+    <div >
+      <div >
+        <div *ngFor='let quote of someQuotes;let j = index'> 
+          <div>
+            <h4 id={{j}} appHighlight>{{quote.name}} __due on__ {{goal.completeDate|date|uppercase}}</h4>
+            <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
+          </div>
+          <div *ngIf='quote.showDescription'>
+            <app-quote-form-detail [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-form-detail>
+          </div>
+        </div>
+      </div><br><br>
+      <div>
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       </div>
-      <app-quote-form-detail ></app-quote-form-detail>
-    </div>
-    <div>
-      <app-quote-form></app-quote-form>
     </div>
   </div>
 </body>
