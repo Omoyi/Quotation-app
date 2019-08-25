@@ -9,23 +9,23 @@
 </head>
 <body><br>
   <div class="container">
-     <!-- <div *ngFor='let quote of someQuotes;let j = index'> 
-      <p id={{j}} appHighlight>{{Quotation.name}}</p>
-      <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
-    </div> -->
     <div id="main">
-        <h2 id="head">Meet our Quotation <br> application</h2>
+      <h2 id="head">Meet our Quotation <br> application</h2>
     </div>
-            <section style="background: rgb(194, 226, 165); color: #fff;">
-                    <nav class="stroke">
-                      <ul>
-                        <li><a href="https://www.brainyquote.com/">Available quotes online</a></li>
-                        <li><a href="">Upload yours</a></li>
-                      </ul>
-                    </nav>
-                  </section>
+    <section style="background: rgb(194, 226, 165); color: #fff;">
+      <nav class="stroke">
+        <ul>
+          <li><a href="https://www.brainyquote.com/">Available quotes online</a></li>
+          <li><a href="">Upload yours</a></li>
+        </ul>
+      </nav>
+    </section>
     <div>
-      <app-quote-form-detail></app-quote-form-detail>
+      <div *ngFor='let quote of someQuotes;let j = index'> 
+        <p id={{j}} appHighlight>{{quote.name}}</p>
+        <button (click)='toggleDetails(j)' class="btn btn-info">Read more</button>
+      </div>
+      <app-quote-form-detail ></app-quote-form-detail>
     </div>
     <div>
       <app-quote-form></app-quote-form>
