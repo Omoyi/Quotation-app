@@ -25,7 +25,7 @@
       <div >
         <div *ngFor='let someQuotes of someQuotes;let j = index'> 
           <div>
-            <h6 id={{j}} appHighlight>{{someQuotes.name}} __due on__ {{someQuotes.completeDate|date|uppercase}}</h6>
+            <h6 id={{j}} appHighlight>{{someQuotes.name}} __posted on__ {{someQuotes.completeDate|date|uppercase}}</h6>
             <img src="https://moroccoenglish.com/me-md/2018/08/timigate-readmore.gif">
             <button (click)='toggleDetails(j)' style="background-image: url(https://moroccoenglish.com/me-md/2018/08/timigate-readmore.gif);">Click me</button>
           </div>
@@ -39,6 +39,6 @@
       </div>
     </div>
   </div>
-  <div class="footer"></div>
+  <div class="footer">copyright2019@Rachel</div>
 </body>
 </html>

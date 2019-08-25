@@ -24,9 +24,9 @@
     <div class="form-group">
       <label for="complete"><p>date</p></label>
       <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
-        <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+        <!-- <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
           <p>Date is required</p>
-        </div>
+        </div> -->
     </div>
     <button type="submit" class="btn btn-dark">Upload</button><br><br><br>
   </form>
