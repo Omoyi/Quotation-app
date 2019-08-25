@@ -1,5 +1,6 @@
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lexend+Giga|Ubuntu&display=swap" rel="stylesheet">
 <p>{{quote.description}}</p>
 <p>Uploaded {{quote.completeDate|dateCount}} days ago</p>
-<button (click)= 'quoteDelete(true)' class="btn btn-outline-primary">Delete</button>
-<button class="btn btn-success up" (click) = 'upVote()'>D{{quote.upVote}})</button>
-<button class="btn btn-default down" (click) = 'downVote()'>U{{quote.downVote}})</button>
+<button (click)= 'quoteDelete(true)' style="background-image: url();">Erase</button>
+<button (click) = 'upVote()'>D{{quote.upVote}}</button>
+<button (click) = 'downVote()'>U{{quote.downVote}}</button>
