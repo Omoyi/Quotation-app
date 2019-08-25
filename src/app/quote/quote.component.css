@@ -1,0 +1,63 @@
+#main{
+  text-align: center;
+  font-weight: bolder; 
+  font-family: cursive;
+  padding-block-end: 50px;
+}
+#head {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+}
+
+section {
+  height: 24vh;
+}
+nav {
+  width: 60%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px 30px;
+  box-shadow: 0px 4px 0px rgb(201, 132, 111);
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+  color:rgb(95, 160, 133);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke .active ul li a:hover:after {
+  width: 80%;
+}

@@ -4,7 +4,7 @@
       <div class="form-group">
       <input type="text" placeholder="your name........" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
       <!-- <p>{{newQuote.name}}</p> -->
-      <div [hidden]="name.valid || name.pristine" class="alert alert-danger"><p>Your name is required</p></div>
+      <div [hidden]="!name.valid && !name.pristine" class="alert alert-danger"><p>Your name is required</p></div>
       <br><br><br><br>
     </div>
 
