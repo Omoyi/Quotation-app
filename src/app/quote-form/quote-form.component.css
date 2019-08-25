@@ -5,7 +5,8 @@ input, textarea {
   padding-right: 90px;
   padding-left: 90px;
   border: none;
-  border-bottom: 1px solid rgb(5, 1, 34);
+  color: white;
+  border-bottom: 1px solid rgb(204, 199, 241);
   background-color: unset;
 }
 
@@ -22,19 +23,27 @@ button:focus {
 }
 
 button {
-  background-color: unset;
+  background-color: rgb(148, 148, 123);
   padding: 16px;
-  padding-right: 90px;
-  padding-left: 90px;
-  border: none;
+  padding-right: 40px;
+  padding-left: 40px;
   color: rgb(5, 4, 51);
-  font-size: 19px;
-  margin-left: 37%;
+  font-size: 20px;
+  margin-left: 41%;
+  border-radius: 25px;
+
 }
-form {
+.container {
   background-image: url(https://atgbcentral.com/data/out/32/4174553-beautiful-background-images.jpg);
+  width: 100%;
 }
 
+.form-group {
+  background-color: black;
+  opacity: 0.8;
+}
 ::placeholder {
   color: white;
+  font-size: 20px;
+  font-family: 'Lexend Giga', sans-serif;
 }

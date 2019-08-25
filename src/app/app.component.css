@@ -1,4 +1,11 @@
 h1 {
+  color: rgb(241, 238, 19);
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 60px;
+  text-shadow: 2px 2px 8px #FF0000;
+}
+
+.header {
   background-image: url(http://getwallpapers.com/wallpaper/full/9/7/4/920570-widescreen-beautiful-background-pics-2560x1600-hd-1080p.jpg);
   background-attachment: fixed;
 }
