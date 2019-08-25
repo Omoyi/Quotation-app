@@ -10,7 +10,6 @@ input, textarea {
   background-color: unset;
 }
 
-
 input {
   margin-left: 30%;
 } 
@@ -31,8 +30,8 @@ button {
   font-size: 20px;
   margin-left: 41%;
   border-radius: 25px;
-
 }
+
 .container {
   background-image: url(https://atgbcentral.com/data/out/32/4174553-beautiful-background-images.jpg);
   width: 100%;
@@ -42,6 +41,7 @@ button {
   background-color: black;
   opacity: 0.8;
 }
+
 ::placeholder {
   color: white;
   font-size: 20px;

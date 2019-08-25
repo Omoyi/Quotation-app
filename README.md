@@ -30,6 +30,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## License 
 
-MIT licence 
+MIT licence [c] 2019
 
 ## Link  on github
+
+https://omoyi.github.io/Quotation-app/

@@ -77,3 +77,7 @@ button {
 button:focus {
   outline: none;
 }
+
+.footer {
+  text-align: center;
+}
