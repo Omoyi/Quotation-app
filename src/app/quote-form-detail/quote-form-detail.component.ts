@@ -17,12 +17,14 @@ export class QuoteFormDetailComponent implements OnInit {
 
   upVote() {
     this.quote.upVote ++
-
-    
+    this.quote.downVote --
   }
+
    downVote() {
-     this.quote.downVote ++
-   }
+    this.quote.downVote ++
+    this.quote.upVote --
+  }
+
   constructor() { }
 
   ngOnInit() {

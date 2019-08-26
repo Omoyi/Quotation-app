@@ -17,10 +17,14 @@
       <nav class="stroke">
         <ul>
           <li><a href="https://www.brainyquote.com/">Available quotes online</a></li>
-          <li><a href="">Upload yours</a></li>
+          <li><a href="">Upload yours below</a></li>
         </ul>
       </nav>
     </section>
+    <!-- <img src="http://getwallpapers.com/wallpaper/full/9/7/4/920570-widescreen-beautiful-background-pics-2560x1600-hd-1080p.jpg" width="1500" height='500'> -->
+    <div>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
     <div >
       <div >
         <div *ngFor='let someQuotes of someQuotes;let j = index'> 
@@ -34,11 +38,9 @@
           </div>
         </div>
       </div><br><br>
-      <div>
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-      </div>
     </div>
   </div>
-  <div class="footer">copyright2019@Rachel</div>
+  <hr>
+  <div class="footer">c o p y r ig h t 2 0 1 9 @ R a c h e l</div>
 </body>
 </html>

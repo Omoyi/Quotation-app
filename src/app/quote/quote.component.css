@@ -80,5 +80,13 @@ button:focus {
 
 .footer {
   text-align: center;
-  font-size: 20px;
+  /* font-size: 37px; */
+  color: rgb(3, 3, 29);
+  font-family: 'Ubuntu', cursive;
+  background-color: rgb(204, 206, 127);
+}
+
+hr {
+  color: black;
+  background-color: rgb(52, 52, 61);
 }
